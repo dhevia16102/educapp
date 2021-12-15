@@ -1,0 +1,44 @@
+<ng-container>
+    <!--toolbar-->
+    <mat-toolbar color="#99DDCC" class="example-header">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dashboard Anak Usia Di Bawah 3 Tahun</span>
+        <div class="uk-width-expand"></div>
+    </mat-toolbar>
+    <!--end toolbar-->
+
+    <mat-sidenav-container class="example-container">
+
+        <mat-sidenav #sidenav mode="side" [position]="'start'" opened class="sidenav-left" [fixedInViewport]="true"
+            [fixedTopGap]="64" [fixedBottomGap]="0">
+
+            <mat-nav-list>
+                <mat-list-item routerLink="/alphabet">
+                    <img src="./assets/alphabet.png" width="30" height="30">
+                    <h3 matLine>Alphabet</h3>
+                </mat-list-item>
+
+                <mat-list-item routerLink=" ">
+                    <img src="./assets/angka.png" width="35" height="40">
+                    <h3 matLine>Angka</h3>
+                </mat-list-item>
+
+                <mat-list-item routerLink=" ">
+                    <img src="./assets/hewan.png" width="50" height="40">
+                    <h3 matLine>Hewan</h3>
+                </mat-list-item>
+            </mat-nav-list>
+
+
+        </mat-sidenav>
+
+        <mat-sidenav #sidenav mode="side" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
+            [fixedTopGap]="60" [fixedBottomGap]="0">
+
+        </mat-sidenav>
+        
+    </mat-sidenav-container>
+</ng-container>
+<img src="./assets/alphabet.png">

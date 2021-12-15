@@ -1,13 +1,51 @@
-<div class="center">
-    <mat-card style="background-color: #99DDCC;">
-        <img src="./assets/Start.png" alt="" width="350px" height="239px" style="align-content: center;">
-        <mat-card-content class="center">
-            <div class class="uk-flex uk-flex-right">
-                <div class="uk-width-expand uk-flex-right">
-                    <button mat-raised-button style="color: gray;" routerLink="/beranda1">Under 3th</button>
-                    <button mat-raised-button color="primary" routerLink="/beranda2">Above 3th</button>
-                </div>
-            </div>
-        </mat-card-content>
-    </mat-card>
-</div>
+<header class="masthead bg-primary text-white text-center">
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <h1 class="masthead-heading text-uppercase mb-0"> Pilih usia anak</h1>
+        <div class="divider-custom-line"></div>
+    </div>
+    <div>
+    <img src="/assets/Start.png">
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button {
+            background-color: #22577E;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {
+            border-radius: 2px;
+        }
+
+        .button2 {
+            border-radius: 4px;
+        }
+
+        .button3 {
+            border-radius: 8px;
+        }
+
+        .button4 {
+            border-radius: 12px;
+        }
+
+        .button5 {
+            border-radius: 50%;
+        }
+    </style>
+    
+
+    <button class="button button3" routerLink="/beranda1">Di bawah 3 tahun</button>
+    <mbutton class="button button3" routerLink="/beranda2">Di atas 3 tahun</mbutton>
+
+</header>

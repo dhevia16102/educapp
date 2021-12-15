@@ -20,6 +20,10 @@ const routes: Routes = [
     component:MulaiComponent
   },
   {
+    path:'admin',
+    loadChildren:()=>import('./app/admin.module').then(mod=>mod.AdminModule)
+  },
+  {
     path:'beranda1',
     component:Beranda1Component
   },
