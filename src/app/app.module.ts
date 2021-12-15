@@ -10,6 +10,11 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MulaiComponent } from './app/mulai/mulai.component';
 import { Beranda1Component } from './app/beranda1/beranda1.component';
 import { Beranda2Component } from './app/beranda2/beranda2.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { Beranda2Component } from './app/beranda2/beranda2.component';
     AppRoutingModule,
     MaterialDesign,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

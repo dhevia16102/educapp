@@ -1,47 +1,46 @@
-<ng-container>
-    <!--toolbar-->
-    <mat-toolbar color="#99DDCC" class="example-header">
-        <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    EducApp
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav='matSidenav'>
+
+        <img class="avatar" src="/assets/logo_150.png">
+
+        <h4 class="name">EducApp</h4>
+        <p class="designation">Education Learning Apps</p>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span>Beranda</span>
         </button>
-        <span>Dashboard Anak Usia Di Bawah 3 Tahun</span>
-        <div class="uk-width-expand"></div>
-    </mat-toolbar>
-    <!--end toolbar-->
-
-    <mat-sidenav-container class="example-container">
-
-        <mat-sidenav #sidenav mode="side" [position]="'start'" opened class="sidenav-left" [fixedInViewport]="true"
-            [fixedTopGap]="64" [fixedBottomGap]="0">
-
-            <mat-nav-list>
-                <mat-list-item routerLink=" ">
-                    <img src="./assets/alphabet.png" width="30" height="30">
-                    <h3 matLine>Alphabet</h3>
-                </mat-list-item>
-
-                <mat-list-item routerLink=" ">
-                    <img src="./assets/angka.png" width="35" height="40">
-                    <h3 matLine>Angka</h3>
-                </mat-list-item>
-
-                <mat-list-item routerLink=" ">
-                    <img src="./assets/hewan.png" width="50" height="40">
-                    <h3 matLine>Hewan</h3>
-                </mat-list-item>
-            </mat-nav-list>
-
-
-        </mat-sidenav>
-
-        <mat-sidenav #sidenav mode="side" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
-            [fixedTopGap]="60" [fixedBottomGap]="0">
-
-        </mat-sidenav>
-        
-    </mat-sidenav-container>
-</ng-container>
-<br>
-<div class="embed-responsive embed-responsive-21by9">
-    <iframe class="embed-responsive-item" src="https://youtube.com/embed/iwKS4b9aUeI"></iframe>
-</div>
+        <button mat-button class="menu-button">
+            <mat-icon>abc</mat-icon>
+            <span>Alphabet</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>123</mat-icon>
+            <span>Angka</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>pets</mat-icon>
+            <span>Hewan</span>
+        </button>
+        <mat-divider></mat-divider>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z4">
+            Test ya, Kids!
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

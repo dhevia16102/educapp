@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Beranda1Component } from './app/beranda1/beranda1.component';
 import { Beranda2Component } from './app/beranda2/beranda2.component';
+import { FooterComponent } from './app/footer/footer.component';
 import { KategoriComponent } from './app/kategori/kategori.component';
+import { AlphabetComponent } from './app/konten/alphabet/alphabet.component';
 import { MulaiComponent } from './app/mulai/mulai.component';
 
 const routes: Routes = [
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path:'beranda2',
     component:Beranda2Component
+  },
+  {
+    path:'alphabet',
+    component:AlphabetComponent
+  },
+  {
+    path:'footer',
+    component:FooterComponent
   }
 ];
 
