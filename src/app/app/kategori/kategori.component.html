@@ -1,63 +1,16 @@
-<nav class="navbar navbar-expand-sm bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="#">EDUCAPP</a>
-        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-        </div>
-    </div>
-</nav>
-<header class="masthead bg-primary text-white text-center">
-    <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <h1 class="masthead-heading text-uppercase mb-0"> Pilih usia anak</h1>
-        <div class="divider-custom-line"></div>
-    </div>
-    <div>
-        <img src="/assets/Start.png">
-    </div>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .button {
-            background-color: #22577E;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span>EducApp</span>
+    </mat-toolbar-row>
+</mat-toolbar>
 
-        .button1 {
-            border-radius: 2px;
-        }
-
-        .button2 {
-            border-radius: 4px;
-        }
-
-        .button3 {
-            border-radius: 8px;
-        }
-
-        .button4 {
-            border-radius: 12px;
-        }
-
-        .button5 {
-            border-radius: 50%;
-        }
-    </style>
-
-
+<div class="divider-custom divider-light">
+    <div class="divider-custom-line"></div>
+    <h1 class="masthead-heading text-uppercase mb-0"> Pilih usia anak</h1>
+    <div class="divider-custom-line"></div>
+</div>
+<img src="/assets/Start.png">
+<div>
     <button class="button button3" routerLink="/beranda1">Di bawah 3 tahun</button>
     <button class="button button3" routerLink="/beranda2">Di atas 3 tahun</button>
-
-</header>
+</div>

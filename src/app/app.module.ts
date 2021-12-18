@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
+import { YouTubePlayerModule } from '@angular/youtube-player'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,55 @@
-<p>mewarnai works!</p>
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    EducApp
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav='matSidenav'>
+
+        <img class="avatar" src="/assets/logo_150.png">
+
+        <h4 class="name">EducApp</h4>
+        <p class="designation">Kategori Usia Di Atas 3 Tahun</p>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" routerLink="/beranda2">
+            <mat-icon>home</mat-icon>
+            <span>Beranda</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/perhitungan">
+            <mat-icon>exposure_plus_1</mat-icon>
+            <span>Perhitungan</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/kata">
+            <mat-icon>abc</mat-icon>
+            <span>Kata</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/benda">
+            <mat-icon>beach_access</mat-icon>
+            <span>Benda</span>
+        </button>
+        <button mat-button class="menu-button" routerLink="/mewarnai">
+            <mat-icon>draw</mat-icon>
+            <span>Mewarnai</span>
+        </button>
+        <mat-divider></mat-divider>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z4">
+            <img src="/assets/doraemon.jpg" width="250" height="300">
+            <a href="/assets/doraemon.jpg" download class="btn">Download
+                <i class="fa fa-download"></i>
+            </a>
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
