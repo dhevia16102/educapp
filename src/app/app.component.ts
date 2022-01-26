@@ -6,5 +6,5 @@ import { MatCardModule} from '@angular/material/card'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'coba';
+  title = 'EducApp';
 }

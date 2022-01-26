@@ -12,6 +12,7 @@ import { PerhitunganComponent } from "./konten/perhitungan/perhitungan.component
 import { MaterialDesign } from "../material/material";
 import { FormsModule } from "@angular/forms";
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes=[
@@ -60,7 +61,8 @@ const routes: Routes=[
         KataComponent,
         MewarnaiComponent,
         PerhitunganComponent,
-        FooterComponent
+        FooterComponent,
+        AboutComponent
     ],
     imports:[
         CommonModule,

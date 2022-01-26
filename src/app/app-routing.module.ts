@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './app/about/about.component';
 import { Beranda1Component } from './app/beranda1/beranda1.component';
 import { Beranda2Component } from './app/beranda2/beranda2.component';
 import { FooterComponent } from './app/footer/footer.component';
@@ -70,6 +71,10 @@ const routes: Routes = [
   {
     path:'mewarnai',
     component:MewarnaiComponent
+  },
+  {
+    path:'about',
+    component:AboutComponent
   }
 ];
 

@@ -1,0 +1,159 @@
+mat-toolbar {
+  background-color: #22577e;
+  color: white;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #F6F2D4;
+  border-radius: 2%;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container, .row {
+  content: "";
+  clear: both;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.foto {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.h2 {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 15rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+}
+
+.network-icon {
+  width: 8%;
+  display: inline-block;
+  padding: 0;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #F6F2D4;
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  padding: 12px 16px; /* Some padding */
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: bisque;
+}
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #1a252f;
+}
